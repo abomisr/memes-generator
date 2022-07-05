@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    color: white;
+    padding: 18px;
+    background: linear-gradient(to left,rgb(50, 31, 76),rgb(106, 0, 255));
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.194);
+}
+body{
+    background-color: rgb(239, 239, 239);
+}
+.body{
+    width: 70%;
+    margin: auto;
+}
+.inputs-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.inputs input{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(75, 75, 75, 0.463);
+    color: black;
+    font-weight: bold;
+    outline: 1px solid rgba(75, 75, 75, 0.463);
+    font-size: 13px;
+}
+.inputs input::placeholder{
+    color:rgb(88, 88, 88);
+    font-weight: bold;
+}
+
+.inputs-container button{
+    width: 85%;
+    padding: 9px;
+    border: 1px solid rgba(75, 75, 75, 0.463);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background: linear-gradient(to left,rgb(79, 42, 130),rgb(91, 0, 220));
+}
+.inputs-container button:hover{
+    background: linear-gradient(to right,rgb(79, 42, 130),rgb(91, 0, 220));
+    animation: btnEffect 1s both;
+}
+
+@keyframes btnEffect {
+    from{
+        color: rgb(91, 0, 220);
+    }
+    to{
+        color: rgb(255, 255, 255);
+    }
+}
+
+.outputs-container{
+    position: relative;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.g-meme{
+    display: none;
+}
+.outputs-container .g-meme img{
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+.outputs-container .g-meme p{
+    position: absolute;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+.out-question{
+    top: 10px;
+    left: 10px;
+}
+.out-answer{
+    top: 65%;
+    left: 60px;
+}
